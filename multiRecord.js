@@ -26,14 +26,14 @@ for(var i = 0; ; ++i) {
   if (remark != '')
     larder +=  { labelID:labelID, name: name,quantity: quantity, units: units, remark: remark, dateIn: dateIn, life: life };
   else 
-   larder +=  { labelID:labelID, name: name,quantity: quantity, units: units, dateIn: dateIn, life: life };
+   larder +=  { labelID:labelID, name: name,quantity: quantity, units: units, dateIn: dateIn, life: life } ;
  print(larder);
 */
 
-larder += '{ "labelID": "' + labelID + '", "name": "' + name + '", "quantity": ' + quantity + ', "units": "' + units +'", ';
+larder += '\'{ "labelID": "' + labelID + '", "name": "' + name + '", "quantity": ' + quantity + ', "units": "' + units +'", ';
 if (remark != '')
   larder += '"remark:" ' + remark + '", '; 
-larder += '"dateIn": "' + dateIn + '", "life": ' + life + '  },\n';
+larder += '"dateIn": "' + dateIn + '", "life": ' + life + '  }\',\n';
   }
 
 print(larder);

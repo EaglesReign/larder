@@ -5,6 +5,9 @@ var larder = JSON.parse(LARDER_FILE);
 //	print(JSON.stringify(entry));
 //});
 
+var testDate = new Date(larder[0]["dateIn"]);
+print(testDate < Date.today());
+
 function filter(array, test) {
   var passed = [];
   for (var i = 0; i < array.length; i++) {

@@ -1,5 +1,5 @@
 // Get input data for one larder record
-var larder = {}, 
+var larder = '', 
 labelID, name, quantity, units, remark, dateIn, life;
 
 for(var i = 0; ; ++i) {
@@ -21,11 +21,19 @@ for(var i = 0; ; ++i) {
   dateIn = readline();
   write('Life: ');
   life = readline();
+
+/* Saved for possible later use
   if (remark != '')
-    larder[i] =  { labelID:labelID, name: name,quantity: quantity, units: units, remark: remark, dateIn: dateIn, life: life }
+    larder +=  { labelID:labelID, name: name,quantity: quantity, units: units, remark: remark, dateIn: dateIn, life: life };
   else 
-   larder[i] =  { labelID:labelID, name: name,quantity: quantity, units: units, dateIn: dateIn, life: life };
-// print(JSON.stringify(larder[i]));
+   larder +=  { labelID:labelID, name: name,quantity: quantity, units: units, dateIn: dateIn, life: life };
+ print(larder);
+*/
+
+larder += '{ "labelID": "' + labelID + '", "name": "' + name + '", "quantity": ' + quantity + ', "units": "' + units +'", ';
+if (remark != '')
+  larder += '"remark:" ' + remark + '", '; 
+larder += '"dateIn": "' + dateIn + '", "life": ' + life + '  },\n';
   }
 
-print(JSON.stringify(larder));
+print(larder);

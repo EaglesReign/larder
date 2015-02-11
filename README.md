@@ -5,7 +5,7 @@ This code is intended to provide a number of examples of the use of the
 various array functions when applied to a real-world dataset.
 
 The dataset in my case keeps track of items in a larder, or food storage area.  For each item in my larder, I keep an "ID" (this could be a barcode), name, quantity, 
-units for the quantity, date placed in the larder, shelf life (expressed in days), and any remarks about the item, e.g. "This stock is not yet salted."
+units for the quantity, date placed in the larder, shelf life (expressed in days), and any remarks about the item, e.g. "This flour is stone-ground."
 
 Here are a couple of example entries from my dataset:
 

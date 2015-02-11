@@ -5,7 +5,8 @@ var LARDER_FILE = "[\n  " + [
 '{ "labelID": "27", "name": "butter", "quantity": 2, "units": "lb", "dateIn": "2/1/15", "life": 20  }',
 '{ "labelID": "28", "name": "salt", "quantity": 1, "units": "lb", "dateIn": "1/20/15", "life": 365  }',
 '{ "labelID": "29", "name": "Cream cheese", "quantity": 3, "units": "lb", "dateIn": "1/10/15", "life": 45 }',
-'{ "labelID": "30", "name": "Bread flour", "quantity": 10, "units": "lb", "dateIn": "2/7/15", "life": 45  }'
+'{ "labelID": "30", "name": "Bread flour", "quantity": 10, "units": "lb", "dateIn": "2/7/15", "life": 45  }',
+'{ "labelID": "31", "name": "Chicken Stock", "quantity": 1, "units": "gal", "dateIn": "1/22/15", "life": 10  }'
 ].join(",\n  ") + "\n]";
 
 // This makes sure the data is exported in node.js

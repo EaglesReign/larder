@@ -9,7 +9,7 @@ units for the quantity, date placed in the larder, shelf life (expressed in days
 
 Here are a couple of example entries from my dataset:
 
-'{ "labelID": "27", "name": "butter", "quantity": 2, "units": "lb", "dateIn": "2/1/15", "life": 20  }
+'{ "labelID": "27", "name": "butter", "quantity": 2, "units": "lb", "dateIn": "2/1/15", "life": 20  }  
 '{ "labelID": "32", "name": "Mexican rice", "quantity": 1, "units": "gl", "remark:" UNSALTED!!", "dateIn": "1/28/15", "life": 20  }',
 
 The repo contains these code examples, among other things:

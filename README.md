@@ -15,6 +15,6 @@ The repo contains these code examples, among other things:
 
 * Routine to read a single data item from terminal and print it in object format
 * Routine to continuously read data items until user hits ENTER for first field
-* Sample filter looking for items with a shelf life more than 10 days
-* Sample filter looking for expired items
+* Sample filter looking for items with a shelf life of more than 10 days (easy)
+* Sample filter looking for expired items (hard)
 * Sample showing reduce to find the item with the longest shelf life

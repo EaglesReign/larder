@@ -36,6 +36,7 @@ function filter(array, test) {
 
 // Right out of the book EXCEPT for test part
 print(JSON.stringify(filter(larder, function(item) {
+  // In ms UTC, If storage date + life limit is less than today, it's EXPIRED
   return (((new Date(item.dateIn)).getTime()) + (item.life * 86400000) < (new Date().getTime())) ;
 })));
 

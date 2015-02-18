@@ -1,3 +1,7 @@
+//Phil Hofer
+//CMP237
+//Attmpting to solve problem 8 under Javascript 101
+
 /* 
 	checkExpired.js
 	Filter larder dataset looking for expired items
@@ -32,11 +36,18 @@ function filter(array, test) {
 // print(((new Date(item.dateIn)).getTime()) + (item.life * 86400000));
 
 // This line expresses today's date in ms
-// print((new Date()).getTime());
+//print(3*((new Date()).getTime()));
 
 // Right out of the book EXCEPT for test part
 print(JSON.stringify(filter(larder, function(item) {
   // In ms UTC, If storage date + life limit is less than today, it's EXPIRED
-  return (((new Date(item.dateIn)).getTime()) + (item.life * 86400000) < (new Date().getTime())) ;
+  //
+  // I modified this return statement so that it compares from today until the
+  // next 3 days. I did this by changing the less than symbol to a greater
+  // than symbol where it was checking if the date had already passed.
+  // I also added an and where we specify that we want to also return what will
+  // expire within the next 3 days. This was accomplished by obtaining the
+  // date and multiplying it by 3.
+  return (((new Date(item.dateIn)).getTime()) + (item.life * 86400000) > ((new Date().getTime())) && ((new Date(item.dateIn)).getTime()) + (item.life * 86400000) < (3*((new Date().getTime())))) ;
 })));
 
